@@ -110,7 +110,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 m-auto col-sm-12 col-md-12">
-                    <form class="row g-3" netlify>
+                    <form name="Formulario-denuncia" class="row g-3" netlify>
                         <div class="col-md-6">
                           <label for="Nombre" class="form-label">Nombre <b class="text-danger">*</b></label>
                           <input type="text" class="form-control" id="Nombre" placeholder="Tu nombre" required>
@@ -133,7 +133,32 @@
                                 <textarea class="form-control" placeholder="Tratá de ser lo más clarx posible. " id="floatingTextarea" required rows="10" cols="50"></textarea>
                             </div>
                         </div>
-                        
+                        <div class="col-md-10 mt-3">
+                            Doy mi consentimiento para que se contacten conmigo 
+                        </div>
+                        <div class="col-md-2 mt-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Consent1" id="Consent1Radio1" value="Si" checked>
+                                <label class="form-check-label" for="Consent1Radio1">Si</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Consent1" id="Consent1Radio2" value="No">
+                                <label class="form-check-label" for="Consent1Radio2">No</label>
+                              </div>
+                        </div>
+                        <div class="col-md-10 mt-3">
+                            Doy mi consentimiento para que se de a conocer mi caso de manera anónima
+                        </div>
+                        <div class="col-md-2 mt-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Consent2" id="Consent2Radio1" value="Si" checked>
+                                <label class="form-check-label" for="Consent2Radio1">Si</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="Consent2" id="Consent2Radio2" value="No">
+                                <label class="form-check-label" for="Consent2Radio2">No</label>
+                              </div>
+                        </div>
                         <div class="col-12 d-flex justify-content-center mt-4">
                           <button type="submit" class="btn btn-primary rounded ">Enviar</button>
                         </div>
