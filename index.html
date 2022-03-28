@@ -113,24 +113,24 @@
                     <form name="Formulario-denuncia" class="row g-3" netlify>
                         <div class="col-md-6">
                           <label for="Nombre" class="form-label">Nombre <b class="text-danger">*</b></label>
-                          <input type="text" class="form-control" id="Nombre" placeholder="Tu nombre" required>
+                          <input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="Tu nombre" required>
                         </div>
                         <div class="col-md-6">
                           <label for="Apellido" class="form-label">Apellido</label>
-                          <input type="text" class="form-control" placeholder="Tu apellido" id="Apellido">
+                          <input type="text" class="form-control" placeholder="Tu apellido" id="Apellido" name="Apellido">
                         </div>
                         <div class="col-md-6 mt-3">
                           <label for="Correo" class="form-label">Email <b class="text-danger">*</b></label>
-                          <input type="email" class="form-control" id="Correo" placeholder="ejemplo@mail.com" required>
+                          <input type="email" class="form-control" id="Correo" placeholder="ejemplo@mail.com" required name="email">
                         </div>
                         <div class="col-md-6 mt-3">
                             <label for="Celular" class="form-label">Celular</label>
                             <input type="text" class="form-control" id="Celular" placeholder="2231234567">
                           </div>
                         <div class="col-12 mt-3">
-                            <label for="floatingTextarea" class="form-label">Contanos lo que te pasó <b class="text-danger">*</b></label>
+                            <label for="mensaje" class="form-label">Contanos lo que te pasó <b class="text-danger">*</b></label>
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Tratá de ser lo más clarx posible. " id="floatingTextarea" required rows="10" cols="50"></textarea>
+                                <textarea class="form-control" placeholder="Tratá de ser lo más clarx posible. " id="mensaje" required rows="10" cols="50" name="mensaje"></textarea>
                             </div>
                         </div>
                         <div class="col-md-10 mt-3">
