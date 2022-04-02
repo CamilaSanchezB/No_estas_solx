@@ -178,6 +178,7 @@
 
     
     <!-- Main jQuery -->
+
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4.3.1 -->
     <script src="plugins/bootstrap/js/popper.min.js"></script>
@@ -188,18 +189,20 @@
     <script src="plugins/counterup/wow.min.js"></script>
     <script src="plugins/counterup/jquery.easing.1.3.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/alert.js"></script>
     <script>
         function Formulario1(event,flag){
             event.preventDefault();
-            document.getElementById("mensaje-1").value = document.getElementById("mensaje").value;
-            $("#boton1").addClass("disabled");
-            $("#boton1").html("Enviado");
-            $("#Formulario-Final").toggle(1100);
-            document.getElementById('abc').remove();
-            $("#alerta-1").removeClass("d-none");
-            /*$("#Formulario-Final").removeClass("collapse");
-            $("#Formulario-Final").addClass("collapsed");*/
-            
+            if(usuario.value){
+                document.getElementById("mensaje-1").value = document.getElementById("mensaje").value;
+                $("#boton1").addClass("disabled");
+                $("#boton1").html("Enviado");
+                $("#Formulario-Final").toggle(1100);
+                document.getElementById('abc').remove();
+                $("#alerta-1").removeClass("d-none");     
+            }
+            else swal("Es necesario un mensaje","","error");
+                   
         }
     </script>
 
