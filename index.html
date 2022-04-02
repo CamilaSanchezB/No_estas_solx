@@ -142,6 +142,9 @@
                                       <label for="Celular" class="form-label">Celular</label>
                                       <input type="text" class="form-control" id="Celular" name="Celular" placeholder="2231234567">
                                   </div>
+                                  <div class="col-12 d-flex justify-content-end pt-2 pb-2">
+                                    <strong class="text-dark">Aunque no completes los campos <u style="color: #3330a3;">presioná en enviar</u></strong>
+                                </div>
                             </div>
                             <div class="col-12 d-flex justify-content-center mt-5">
                                 <button type="submit" class="btn btn-primary rounded" id="boton2">Enviar</button>
@@ -163,7 +166,8 @@
                 <div class="col-lg-12 col-sm-12 col-md-12 ">
                     <div class="footer-widget footer-link">
                         <h3>Contactanos</h3>
-                        <p>Ante cualquier duda o incoveniente mandanos un mail a: <h4 style="color: #3330a3;">no.estas.solo.t5@gmail.com</h4></p>
+                        Ante cualquier duda o incoveniente mandanos un mail a: <h4><a href="mailto:no.estas.solo.t5@gmail.com"><u>no.estas.solo.t5@gmail.com</u></a></h4>
+                        O comunicate al <h4><a href="tel:+5492236807908"><u>2236807908</u></a></h4>
                     </div>
                 </div>
         </div>
@@ -193,15 +197,17 @@
     <script>
         function Formulario1(event,flag){
             event.preventDefault();
-            if(usuario.value){
+            if (!$.trim($("#mensaje").val())) {
+                swal("Es necesario un mensaje","","error")
+            }
+            else { 
                 document.getElementById("mensaje-1").value = document.getElementById("mensaje").value;
                 $("#boton1").addClass("disabled");
                 $("#boton1").html("Enviado");
                 $("#Formulario-Final").toggle(1100);
                 document.getElementById('abc').remove();
                 $("#alerta-1").removeClass("d-none");     
-            }
-            else swal("Es necesario un mensaje","","error");
+            };
                    
         }
     </script>
