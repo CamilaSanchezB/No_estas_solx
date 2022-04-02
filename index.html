@@ -131,7 +131,7 @@
                         <div class="alert alert-success d-none" role="alert" id="alerta-1">Recibimos tu mensaje.</div>
                       </form>
                         <form  id="Formulario-Final" name="Formulario-Final" style="display: none" class="pt-3" netlify>
-                            <input type="hidden" name="mensaje-1" id="mensaje-1">
+                            <input type="hidden" name="comunicado" id="comunicado">
                             <h4 class="text-dark">Si querés que nos contactemos con vos podés dejarnos alguno de estos datos</h4>
                             <div class="row pb-2">
                                 <div class="col-md-6 mt-3">
@@ -201,7 +201,7 @@
                 swal("Es necesario un mensaje","","error")
             }
             else { 
-                document.getElementById("mensaje-1").value = document.getElementById("mensaje").value;
+                document.getElementById("comunicado").value = document.getElementById("mensaje").value;
                 $("#boton1").addClass("disabled");
                 $("#boton1").html("Enviado");
                 $("#Formulario-Final").toggle(1100);
